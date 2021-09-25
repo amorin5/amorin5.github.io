@@ -12,8 +12,8 @@ Last summer I interned at <a href="https://www.mgsmfg.com/" target="_blank">MGS 
 
 **Feel free to reach out to me on**
 
-    - Github: <a href="https://github.com/eertl2/">eertl2</a>
+- Github: <a href="https://github.com/eertl2/">eertl2</a>
 
-    - Email: <a href="mailto: ertleri19@gmail.com">ertleri19@gmail.com</a>
-    
-    - LinkedIn: <a href="https://www.linkedin.com/in/eric-ertl-40a0751b4/">Eric Ertl</a>
+- Email: <a href="mailto: ertleri19@gmail.com">ertleri19@gmail.com</a>
+
+- LinkedIn: <a href="https://www.linkedin.com/in/eric-ertl-40a0751b4/">Eric Ertl</a>
