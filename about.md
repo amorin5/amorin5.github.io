@@ -1,18 +1,13 @@
 ---
-title: Colophon
+title: Hi, I'm Eric!
 permalink: /about/
 layout: page
-excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in Jogjakarta. This blog for documentation about my programming journey, running on jekyll, hosting on netlify and using my own simple theme.
+excerpt: Hi I'm Eric! Currently studying Computer Science at the University of Wisconsin-Madison.
 comments: false
 ---
 
-He's a student from Banyuwangi, living in Jogjakarta. the blog for documentation about his programming 🎒 journey, running on jekyll, hosting on [now.sh](http://now.sh) and using his own theme, he name it <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">klisé</a>, he also loves to learning web technology; but he often forgot, that a reason why him doing the writing.
+I'm currently a Computer Science major at the University of Wisconsin-Madison. I enjoy coding, running, biking, EDM, chess, anime, and playing video games. Right now I'm trying to improve my HTML & CSS skills by helping code the FOSS (Free Open-Source Software) Club's website here at UW-Madison. 
 
-If you have a question about him or else, just send a letter to him.
+Last summer I interned at MGS Mfg. as an IT intern, where I digitized their auditing process to increase accountability, faster data analysis, and increased accountability from workers.
 
-You can [report](http://github.com/piharpi/jekyll-klise/issues/new) if there is an broken link(s) or somethings else.
-
-**may u needs ✨**
-
-- {{ site.author.email }}
-- github.com/{{ site.author.github }}
+Feel free to reach out to me on
