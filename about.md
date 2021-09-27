@@ -13,5 +13,5 @@ Last summer I interned at [MGS Mfg.](https://www.mgsmfg.com/) as an IT intern, w
 **Feel free to reach out to me on**
 
 * Github: [eertl2](https://github.com/eertl2/)
-* Email: [eertl2](mailto: ertleri19@gmail.com)
-* LinkedIn: [eertl2](https://www.linkedin.com/in/eric-ertl-40a0751b4/)
+* Email: [ertleri19@gmail.com](mailto: ertleri19@gmail.com)
+* LinkedIn: [Eric Ertl](https://www.linkedin.com/in/eric-ertl-40a0751b4/)
