@@ -6,7 +6,7 @@ excerpt: Hi I'm Eric! Currently studying Computer Science at the University of W
 comments: false
 ---
 
-I'm currently a Computer Science major at the University of Wisconsin-Madison. I enjoy coding, running, biking, EDM, chess, anime, and playing video games. Right now I'm trying to improve my HTML & CSS skills by helping code the FOSS (Free Open-Source Software) Club's [website](https://foss-uw.github.io/) here at UW-Madison. 
+I'm currently a Computer Science major at the University of Wisconsin-Madison. I enjoy coding, running, biking, EDM, chess, anime, and playing video games. Right now I'm trying to improve my HTML & CSS skills by helping code the FOSS (Free Open-Source Software) Club's [website](https://fossclub-uw.org/) here at UW-Madison. 
 
 Last summer I interned at [MGS Mfg.](https://www.mgsmfg.com/) as an IT intern, where I digitized their auditing process which led to faster audits, enhanced data analytics, and increased accountability from workers.
 
