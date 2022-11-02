@@ -1,7 +1,7 @@
 ---
 title: History of Book Project
 layout: book
-permalink: "/404.html"
+permalink: "/book/"
 comments: false
 ---
 
