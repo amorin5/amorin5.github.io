@@ -12,7 +12,6 @@ class Book {
         this.sliderControl = false;
     }
 
-    //from github
     lineToTx(loc,Tx)
     {
         var res = this.vec3.create(); 
@@ -20,7 +19,6 @@ class Book {
         this.ctx.lineTo(res[0],res[1]);
     }
 
-    //from github
     moveToTx(loc,Tx)
     {
         var res = this.vec3.create(); 
@@ -87,8 +85,6 @@ class Book {
         this.ctx.fillStyle = color;
         this.ctx.beginPath();
 
-      
-        //base
         this.moveToTx([-x + xoff, 0 + yoff, -z + zoff],Tx);
         this.lineToTx([-x + xoff, 0 + yoff,z + zoff],Tx);
         this.lineToTx([x + xoff, 0 + yoff,z + zoff],Tx); 
@@ -96,20 +92,17 @@ class Book {
         this.lineToTx([-x + xoff, 0 + yoff,-z + zoff],Tx);
         if(fill) this.ctx.fill();
 
-        //North side
         this.lineToTx([-x + xoff,y + yoff,-z + zoff],Tx);
         this.lineToTx([-x + xoff,y + yoff,z + zoff],Tx);
         this.lineToTx([-x + xoff,0 + yoff,z + zoff],Tx);
         if(fill) this.ctx.fill();
 
-        //East side
         this.moveToTx([-x + xoff,y + yoff,-z + zoff],Tx);
         this.lineToTx([x + xoff,y + yoff,-z + zoff],Tx);
         this.lineToTx([x + xoff,0 + yoff,-z + zoff],Tx);
         this.lineToTx([-x + xoff,0 + yoff,-z + zoff],Tx);
         if(fill) this.ctx.fill();
 
-        //South side
         this.moveToTx([x + xoff,0 + yoff,z + zoff],Tx);
         this.lineToTx([x + xoff,y + yoff,z + zoff],Tx);
         this.lineToTx([x + xoff,y + yoff,-z + zoff],Tx);
@@ -117,7 +110,6 @@ class Book {
         this.lineToTx([x + xoff,0 + yoff,z + zoff],Tx);
         if(fill) this.ctx.fill();
 
-        //West side
         this.moveToTx([-x + xoff,y + yoff,z + zoff],Tx);
         this.lineToTx([x + xoff,y + yoff,z + zoff],Tx);
         this.lineToTx([x + xoff,0 + yoff,z + zoff],Tx);
@@ -125,7 +117,6 @@ class Book {
         this.lineToTx([-x + xoff,y + yoff,z + zoff],Tx);
         if(fill) this.ctx.fill();
 
-        //Top Side
         this.moveToTx([-x + xoff,y + yoff,-z + zoff],Tx);
         this.lineToTx([-x + xoff,y + yoff,z + zoff],Tx);
         this.lineToTx([x + xoff,y + yoff,z + zoff],Tx); 
@@ -137,21 +128,15 @@ class Book {
 	}
     
     draw() {
-        // Create Camera (lookAt) transform
         var eyeCamera = this.CameraCurve(this.viewAngle);
-        var targetCamera = this.vec3.fromValues(0,0,0); // Aim at the origin of the world coords
-        var upCamera = this.vec3.fromValues(0,100,0); // Y-axis of world coords to be vertical
+        var targetCamera = this.vec3.fromValues(0,0,0); 
+        var upCamera = this.vec3.fromValues(0,100,0); 
         var TlookAtCamera = glMatrix.mat4.create();
         glMatrix.mat4.lookAt(TlookAtCamera, eyeCamera, targetCamera, upCamera);
 
         var Tviewport = glMatrix.mat4.create();
-        glMatrix.mat4.fromTranslation(Tviewport,[300,300,0]);  // Move the center of the
-                                                    // "lookAt" transform (where
-                                                    // the camera points) to the
-                                                    // canvas coordinates (300,300)
-        glMatrix.mat4.scale(Tviewport,Tviewport,[100,-100,1]); // Flip the Y-axis,
-                                                    // scale everything by 100x
-
+        glMatrix.mat4.fromTranslation(Tviewport,[300,300,0]);  
+        glMatrix.mat4.scale(Tviewport,Tviewport,[100,-100,1]); 
         var TprojectionCamera;
         var tVP_PROJ_VIEW_Camera;
 
@@ -162,38 +147,26 @@ class Book {
         glMatrix.mat4.multiply(tVP_PROJ_VIEW_Camera,tVP_PROJ_VIEW_Camera,TlookAtCamera);
 
         
-        //leg
         this.drawCube(tVP_PROJ_VIEW_Camera, 100.0, 0.2, 0.5, 0.1, -1.3, -0.5, 0.5, `rgb(185,90,15)`);
         
-        //leg
         this.drawCube(tVP_PROJ_VIEW_Camera, 100.0, 0.2, 0.5, 0.1, -1.3, -0.5, -0.5, `rgb(185,90,15)`);
 
-        //base
         this.drawCube(tVP_PROJ_VIEW_Camera, 100.0, 1.6, 0.2, 0.7, 0, 0, 0, `rgb(185,90,15)`);
     
-        //leg
         this.drawCube(tVP_PROJ_VIEW_Camera, 100.0, 0.2, 2, 0.13, 1.1, -0.5, 0.8, `rgb(185,90,15)`);
 
-        //leg
         this.drawCube(tVP_PROJ_VIEW_Camera, 100.0, 0.2, 2, 0.13, 1.1, -0.5, -0.8, `rgb(185,90,15)`);
 
-        //stamp
         this.drawCube(tVP_PROJ_VIEW_Camera, 100.0, 0.4, 0.1, 0.4, 1.1, 0.9, -0, `rgb(160,160,160)`);
     
-        //stamp plate
         this.drawCube(tVP_PROJ_VIEW_Camera, 100.0, 0.45, 0.1, 0.45, -0.95, 0.1, 0, `rgb(160,160,160)`);
 
-        //press beam
         this.drawCube(tVP_PROJ_VIEW_Camera, 100.0, 0.2, 0.5, 0.2, 1.1, 1, -0, `rgb(160,160,160)`);
 
-        //support
         this.drawCube(tVP_PROJ_VIEW_Camera, 100.0, 0.27, 0.3, 1.2, 1.1, 1.5, 0, `rgb(185,90,15)`);
 
         
         this.drawSidePlate(tVP_PROJ_VIEW_Camera,100.0);
-
-
-        //this.drawUpVector(tVP_PROJ_VIEW_Camera,100.0);
     }
 
     update() {

@@ -46,7 +46,6 @@ layout: compress
             var context;
             var book;
 
-            // animation loop 
             function draw() {
                 context.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -65,17 +64,14 @@ layout: compress
                 window.requestAnimationFrame(draw);
             }
 
-            // set up the elements
             vCanvas = document.getElementById('canvas');
             context = vCanvas.getContext('2d');
 
-            // make a book
             book = new Book(context);
 
             draw();
         }
 
-        // start the program when the window is done loading
         window.onload=myApp;
     </script>
 
