@@ -1,0 +1,71 @@
+---
+layout: book
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eric's Book Project</title>
+</head>
+
+<body>
+<H1>
+    Book
+</H1>
+
+<canvas id = "canvas" width="600" height="600" style="border:1px solid #000000;"></canvas>
+
+<br />
+move <input id="slider1" type="range" min="-20" max="200"/>
+<br />
+<label for="myCheck">Fill object:</label> 
+<input type="checkbox" id="myCheck" checked>
+<br />
+<label for="myCheck2">Manual Control:</label> 
+<input type="checkbox" id="myCheck2">
+
+<script type="text/javascript" src="../assets/gl-matrix-min.js"></script>
+<script src="../assets/book.js"></script>
+<script>
+    "use strict";
+    function myApp() {
+        var vCanvas;
+        var context;
+        var book;
+
+        // animation loop 
+        function draw() {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            context.save();
+            book.fill = document.getElementById("myCheck").checked;
+            book.sliderControl = document.getElementById("myCheck2").checked;
+            if(!document.getElementById("myCheck2").checked) {
+                document.getElementById("slider1").value = book.viewAngle;
+            }
+
+            book.sliderValue = slider1.value*0.02*Math.PI;
+            book.update();
+            book.draw();
+            context.restore();
+
+            window.requestAnimationFrame(draw);
+        }
+
+        // set up the elements
+        vCanvas = document.getElementById('canvas');
+        context = vCanvas.getContext('2d');
+
+        // make a book
+        book = new Book(context);
+
+        draw();
+    }
+
+    // start the program when the window is done loading
+    window.onload=myApp;
+</script>
+
+</body>
+</html>
