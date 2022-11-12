@@ -6,10 +6,6 @@
   url: /about/
   external: false
 
-- title: book
-  url: /book/
-  external: false
-
 - title: resume
   url: /resume/Eric_Ertl_Resume.pdf
   external: false
