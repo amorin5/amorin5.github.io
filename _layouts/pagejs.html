@@ -34,15 +34,15 @@ layout: compress
       <h1 class="header-title center" itemprop="headline">{{ page.title | escape }}</h1>
     </header>
     <main class="page-content" aria-label="Content">
-      {% for js in page.customjs %}
-      <script async type="text/javascript" src="{{ js }}"></script>
-      {% endfor %}
-      <script async
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpWNzdKlQOhBaPEfjXBVmLuk2mzsbH2ZE&callback=initMap">
-      </script>
-      <div id="map"></div>
       {% include anchor_headings.html html=content anchorClass="anchor-head" beforeHeading=true h_min=4 h_max=4 %}
     </main>
+    {% for js in page.customjs %}
+    <script async type="text/javascript" src="{{ js }}"></script>
+    {% endfor %}
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpWNzdKlQOhBaPEfjXBVmLuk2mzsbH2ZE&callback=initMap">
+    </script>
+    <div id="map"></div>
     {% include footer.html %}
   </div>
 </body>
