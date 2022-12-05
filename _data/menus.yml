@@ -2,16 +2,8 @@
   url: /
   external: false
 
-- title: about
-  url: /about/
-  external: false
-
 - title: potholes
   url: /pot/
-  external: false
-
-- title: resume
-  url: /resume/Eric_Ertl_Resume.pdf
   external: false
 
 # Example:
