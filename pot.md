@@ -13,5 +13,6 @@ There are 55 million potholes in the U.S. alone, causing 27% of the roads to be 
 
 ![Pothole img](https://www.cityworks.com/wp-content/uploads/2020/01/pot-hole-blog.gif)
 
+
 ![Pothole img2](https://ericertl.dev/assets/img/SSD_Model.png)
 
