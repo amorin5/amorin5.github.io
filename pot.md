@@ -4,7 +4,7 @@ permalink: /pot/
 layout: pagejs
 excerpt: Potholes are bad
 customjs:
- - http://ericertl.dev/assets/js/maps.js
+ - /assets/js/maps.js
 comments: false
 ---
 
