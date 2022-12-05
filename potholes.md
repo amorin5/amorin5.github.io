@@ -1,7 +1,7 @@
 ---
 title: CS639 Potholes
 permalink: /potholes/
-layout: page
+layout: pagejs
 excerpt: Potholes are bad
 customjs:
  - http://ericertl.dev/assets/js/maps.js
