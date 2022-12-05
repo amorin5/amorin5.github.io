@@ -16,7 +16,7 @@ author:
 
 
 # URL settings
-url: "https://plothole.dev" #
+url: "https://amorin5.github.io/pothole-vision" #
 baseurl:
 permalink: /:title/
 google_analytics: # leave it blank if not wish
