@@ -10,6 +10,14 @@
   url: /background/
   external: false
 
+  title: about
+  url: /about/
+  external: false
+
+  title: implementation
+  url: /implementation
+  external: false
+
 # Example:
 # - title: github
 #   url: https://github.com/piharpi/jekyll-klise
