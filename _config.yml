@@ -13,6 +13,7 @@ author:
   name: Eric Ertl, Angie Morin, Samyu Iyer # author name
   bio: >- # tell to the world
       Click to the potholes tab to read more about how we use machine learning to reduce potholes on roads.
+  avatar: /assets/img/pothole.png # avatar
 
 
 # URL settings
