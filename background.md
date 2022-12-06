@@ -20,16 +20,17 @@ We are personally inconvenienced when there are potholes on the road, and find i
 
 ### Approach
 ##### Current State-Of-The-Art
-<!-- <details>
-<summary>What is currently being done to reach a solution...</summary> -->
+<details>
+<summary>What is currently being done to reach a solution...</summary>
 The current approach to solving the prevalence of potholes is by using deep learning. 
-[This paper](https://www.hindawi.com/journals/ace/2022/9221211/) describes the current solutions:
+[This paper](https://www.hindawi.com/journals/ace/2022/9221211/) describes the current solutions:  
 
-- [Here](https://scholar.google.com/scholar_lookup?title=Three%20combination%20value%20of%20extraction%20features%20on%20glcm%20for%20detecting%20pothole%20and%20asphalt%20road&author=Y.%20K.%20Arbawa&author=F.%20Utaminingrum&author=E.%20Setiawan&publication_year=2021), a pothole detection system exists using a grey-level co-occurrence matrix (GLCM) feature extractor and a support vector machine (SVM) as the classifier.
+* [Here](https://scholar.google.com/scholar_lookup?title=Three%20combination%20value%20of%20extraction%20features%20on%20glcm%20for%20detecting%20pothole%20and%20asphalt%20road&author=Y.%20K.%20Arbawa&author=F.%20Utaminingrum&author=E.%20Setiawan&publication_year=2021), a pothole detection system exists using a grey-level co-occurrence matrix (GLCM) feature extractor and a support vector machine (SVM) as the classifier.  
 
-- [Here](https://scholar.google.com/scholar_lookup?title=Real-time%20machine%20learning-based%20approach%20for%20pothole%20detection&author=O.%20A.%20Egaji&author=G.%20Evans&author=M.%20G.%20Griffiths&author=G.%20Islas&publication_year=2021), five binary classifiers (SVM, Logistic regression, Naive Bayes, KNN, and Random forest tree) are used over data from cell phones and synthesized to create a complete model.
+* [Here](https://scholar.google.com/scholar_lookup?title=Real-time%20machine%20learning-based%20approach%20for%20pothole%20detection&author=O.%20A.%20Egaji&author=G.%20Evans&author=M.%20G.%20Griffiths&author=G.%20Islas&publication_year=2021), five binary classifiers (SVM, Logistic regression, Naive Bayes, KNN, and Random forest tree) are used over data from cell phones and synthesized to create a complete model.  
     
-- [Here](https://scholar.google.com/scholar_lookup?title=Convolutional%20neural%20network%20for%20pothole%20detection%20in%20asphalt%20pavement&author=W.%20Ye&author=W.%20Jiang&author=Z.%20Tong&author=D.%20Yuan&author=J.%20Xiao&publication_year=2021), a model using conventional CNN and pre-pooling CNN are used to inspect potholes with 96% accuracy. 
+* [Here](https://scholar.google.com/scholar_lookup?title=Convolutional%20neural%20network%20for%20pothole%20detection%20in%20asphalt%20pavement&author=W.%20Ye&author=W.%20Jiang&author=Z.%20Tong&author=D.%20Yuan&author=J.%20Xiao&publication_year=2021), a model using conventional CNN and pre-pooling CNN are used to inspect potholes with 96% accuracy.  
+
 Overall, the current state of the art includes many machine and deep learning models, especially those relating to neural networks like CNN. 
 <br>
 Upon researching further, there are many expansions upon a simple CNN model, with the two most prevalent being YOLO (You Only Look One) and SSD (Single Shot Detector). 
@@ -47,7 +48,7 @@ YOLO is similar to SSD in that they are both one-step detectors, both detecting 
 
 <br>
 Both these neural network models/algorithms have been used in object detection, and much of our research so far has been determining what the best model would be for our problem. Right now, we are looking at using YOLOv5 for our object classification. This model requires images to be annotated before passing them through, which will be another step to consider in our updated timetable. 
-<!-- </details> -->
+</details>
 
 ##### Our Execution Plan
 <details>
