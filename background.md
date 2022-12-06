@@ -6,7 +6,7 @@ excerpt: Approach, Motivation, and Background Information
 comments: false
 ---
 ### Jump to...
-[Current State-of-the-Art](#Current-State-of-the-Art)
+[Current State-of-the-Art](#current-state-of-the-art)
 
 
 ### Background Information
