@@ -6,7 +6,7 @@ lang: en-US # default lang
 timezone: America/Chicago # set your timezone
 image: assets/img/pothole.png # This image used for Open Graph more info https://ogp.me/
 repo: https://github.com/amorin5/pothole-vision.git # site repo [optional]
-mode: dark # default theme "dark" | "light"
+mode: light # default theme "dark" | "light"
 
 # Profile settings
 author:
