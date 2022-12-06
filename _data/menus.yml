@@ -6,6 +6,10 @@
   url: /pot/
   external: false
 
+  title: background
+  url: /background/
+  external: false
+
 # Example:
 # - title: github
 #   url: https://github.com/piharpi/jekyll-klise
