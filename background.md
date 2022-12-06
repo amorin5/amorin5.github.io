@@ -6,20 +6,17 @@ excerpt: Approach, Motivation, and Background Information
 comments: false
 ---
 ### Jump to...
+[Background Information](#background-information)
+[Motiviation](#motivation)
 [Current State-of-the-Art](#current-state-of-the-art)
+[Our Approach](#our-approach)
 
 
 ### Background Information
-<details open>
-<summary>What you need to know about potholes...</summary>
 There are 55 million potholes in the U.S. alone, causing 27% of the roads to be deemed substandard. Potholes can cause collisions and severe injuries to all types of vehicles, including cyclists and pedestrians. Places with cold climates, such as Wisconsin, are especially susceptible to potholes as they form easily due to water and snow seeping into cracks and freezing during the night. Currently, the only way used to identify potholes on roads involves having a person manually inspect and report potholes they come across. This can lead to potholes going undetected and is also an inefficient way of gathering data. In order to save taxpayer money and government resources, we can identify potholes from drone and CCTV footage using computer vision. By using computer vision, we can automate the detection process of potholes, simplifying the collection of data necessary to determine how best to allocate infrastructure funds. This would lead to potholes getting noticed earlier and thus fixed faster. 
-</details>
 
 ### Motiviation
-<details>
-<summary>Why we want to solve this problem...</summary>
 We are personally inconvenienced when there are potholes on the road, and find it to be a general danger to our community. Potholes are a massive issue that is close to our hearts. Samyu’s family member died from a pothole injury – she was sitting sideways on the back of a scooter in India, and although they were driving at a slow pace, the scooter hit a pothole and she fell off, and ultimately died from the head injury that resulted. We felt that by using computer vision to detect potholes, we could positively impact communities around the world, and optimize for better allocation of resources.
-</details>
 
 ### Approach
 ##### Current State-of-the-Art
@@ -51,8 +48,7 @@ YOLO is similar to SSD in that they are both one-step detectors, both detecting 
 <br>
 Both these neural network models/algorithms have been used in object detection, and much of our research so far has been determining what the best model would be for our problem. Right now, we are looking at using YOLOv5 for our object classification. This model requires images to be annotated before passing them through, which will be another step to consider in our updated timetable. 
 
-##### Our Execution Plan
-<details>
+##### Our Approach
 <summary>What our solution will look like...</summary>
 Since our project is a simple classification task (pothole versus non-pothole) and we have found multiple models that can classify them in real-time with accuracy >95%, we will re-implement an existing solution. However, in an attempt to better understand the code and have greater control in tweaking variables and layers, we will draw inspiration from multiple models and hopefully make one that can perform at least as good as existing models. We will also combine multiple datasets of potholes while training our model to lower variance (to a certain extent) and also reduce the chance of overfitting the data. This is part of why we feel our solution can perform better than existing solutions. We decided to try and build the model in YOLOv5 using Google Collab, but if we run into issues with building our model in YOLOv5, we may look into using a different type of CNN. We will use Google Collab or our personal devices to train the model. 
 <br>
@@ -61,4 +57,3 @@ Since current solutions to this problem exist, we’re hoping to add a novel lay
 <br>
 
 We think this will be a worthy time investment as the detection models alone are not enough to create real-world change. As far as we have researched, most of the current solutions exist as academic projects or toy projects -- nothing so far has been applied to the state of the roads so that progress can be made in the real world. This work has not been adequately completed in our minds, and this is the other part of why our solution will expand and improve upon work already done. 
-</details>
