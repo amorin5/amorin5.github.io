@@ -5,6 +5,9 @@ layout: pagejs
 excerpt: Approach, Motivation, and Background Information
 comments: false
 ---
+### Jump to...
+[Current State-of-the-Art](#Current-State-of-the-Art)
+
 
 ### Background Information
 <details open>
@@ -19,9 +22,8 @@ We are personally inconvenienced when there are potholes on the road, and find i
 </details>
 
 ### Approach
-##### Current State-Of-The-Art
-<details>
-<summary>What is currently being done to reach a solution...</summary>
+##### Current State-of-the-Art
+
 The current approach to solving the prevalence of potholes is by using deep learning. 
 [This paper](https://www.hindawi.com/journals/ace/2022/9221211/) describes the current solutions:  
 
@@ -48,7 +50,6 @@ YOLO is similar to SSD in that they are both one-step detectors, both detecting 
 
 <br>
 Both these neural network models/algorithms have been used in object detection, and much of our research so far has been determining what the best model would be for our problem. Right now, we are looking at using YOLOv5 for our object classification. This model requires images to be annotated before passing them through, which will be another step to consider in our updated timetable. 
-</details>
 
 ##### Our Execution Plan
 <details>
