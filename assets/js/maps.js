@@ -2,15 +2,24 @@ import { getData } from "./firebase.js"
 
 let map;
 
-function initMap() {
+async function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 43.073051, lng: -89.401230 },
-    zoom: 8,
+    zoom: 14,
   });
 
-  let d2 = getData();
+  const d2 = await getData();
 
-  
+  d2.forEach((doc) => {
+    //db debug
+    const latlong = doc.data();
+    console.log(doc.id, " => ", latlong);
+    new google.maps.Marker({
+      position: { lat: latlong.lat, lng: latlong.long},
+      map: map,
+    });
+  });
+
 }
 
 window.initMap = initMap;
