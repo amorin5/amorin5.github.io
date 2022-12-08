@@ -1,7 +1,7 @@
 ---
 title: Backstory, Approach, and Motivation
 permalink: /background/
-layout: pagejs
+layout: page
 excerpt: Approach, Motivation, and Background Information
 comments: false
 ---

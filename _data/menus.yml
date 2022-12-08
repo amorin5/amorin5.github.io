@@ -2,19 +2,15 @@
   url: /
   external: false
 
-- title: potholes
-  url: /pot/
-  external: false
-
-  title: background
+- title: background
   url: /background/
   external: false
 
-  title: about
+- title: about
   url: /about/
   external: false
 
-  title: implementation
+- title: implementation
   url: /implementation
   external: false
 
