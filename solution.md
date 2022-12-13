@@ -1,7 +1,7 @@
 ---
-title: Implementation of Our Solution
+title: Implementation and Results
 layout: pagejs
-permalink: "/implementation/"
+permalink: "/solution/"
 customjs:
  - /assets/js/maps.js
 comments: false
@@ -23,20 +23,29 @@ We also measured mAP, the Mean Average Performance of the model. mAP is a formul
 
 The final two metrics were precision and recall.  Precision is the fraction of relevant instances compared to retrieved instances, which measures how many objects are correctly classified. Recall is the fraction of relevant instances that were retrieved, which measures the percentage of true postives vs. false positives. Having a high number for both of these metrics is encouraging, as it suggests that the model is correctly detecting potholes. Our precision metrics is around 80% and our recall is around 70%, which aren't amazing but do show that our model is working correctly a high majority of the time. In our own tests images, there were no cases in which a pothole was not detected or the model drew a bounding box around something that was not a pothole. 
 
+### Model: Results
 # INSERT TABLES AND IMAGES OF BOUNDING BOXES
+
+### Model: Problems Encountered
 
 ### User Uploads
 Once we had a trained YOLO model, we were able to move into other functionality. One of our main goals with this project was to take the current state-of-the-art and make it real-world usable. In order to do that, we came up with an idea that users can upload their own images, videos, or live captures and the model is run over that submission. To build this functionality, we used Python...
 
 # Samyu explains how she built the upload page
+
+### User Uploads: Results
 # link to upload page
+
+### User Uploads: Problems Encountered
 
 The intention of this functionality is to notify government officials of potholes in specific areas so that the time typically taken for screening roads and mapping the ideal route for maintenance and repair is cut down. Because this application can be run on live video, users could attach their dashcams to the model as they are driving -- the survellience process is fully automated in this scenario. Otherwise, pedestrians, bikers, and other commuters could take pictures with their phones and submit that data. Essentially, this step is intended to eliminate the need for road surveys. In order to optimize the repair process, we will use metadata from user uploads to create a map of potholes in a given area.
 
 ### Pothole Mapping
-The final step of our implementation is mapping the location of images uploaded by users. In order to do this, we hosted a database of images and wrote a JavaScript script to pull the metadata (latitude, longitude coordinates) from each image. Then, a dot is populated on the map at those points. The embedded map below is that map, using our own collected images to prove correctness of our workflow. 
+The final step of our implementation is mapping the location of images uploaded by users. In order to do this, we hosted a database of images and wrote a JavaScript script to pull the metadata (latitude, longitude coordinates) from each image. Then, a dot is populated on the map at those points. The resulting map is embedded below, with points corresponding to our own collected images to prove correctness of our workflow. 
 
 # Eric adds more details about how he built this part.
+
+### Pothole Mapping: Problems Encountered
 
 The motivation of adding this, as mentioned, is to improve outcomes of road maintenance. The most costly portion of maintenance is materials, with time cost for mapping an optimal route coming in second. Our map reduces that cost. Not only are the pothole plotted exactly, but we have images of all the potholes at those locations so workers can identify severity, amount of materials needed, estimate repair time, and a number of other features. 
 

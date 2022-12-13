@@ -6,17 +6,17 @@
   url: /background/
   external: false
 
-- title: implementation
-  url: /implementation/
+- title: solution
+  url: /solution/
   external: false 
 
-- title: results
-  url: /results/
-  external: false
+# - title: results
+#   url: /results/
+#   external: false
 
-- title: encountered problems
-  url: /problems/
-  external: false
+# - title: encountered problems
+#   url: /problems/
+#   external: false
 
 - title: authors
   url: /authors/
