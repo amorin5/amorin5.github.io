@@ -10,9 +10,12 @@ mode: light # default theme "dark" | "light"
 
 # Profile settings
 author:
-  name: Eric Ertl, Angie Morin, Samyu Iyer # author name
+  name: Plothole -- Using Computer Vision to Improve Infrastructure # author name
   bio: >- # tell to the world
-      Click to the potholes tab to read more about how we use machine learning to reduce potholes on roads.
+      Pothole repairs are the most common form of road repairs. Unrepaired potholes can cause collisions, 
+      injury, and even death. Because of this, we wanted to improve the process through automated detection, 
+      location, and mapping. Click through the tabs to see why we wanted to tackle this issue, how we went about it, 
+      what our results are, and what problems we overcame.
   avatar: /assets/img/potholeimg.png # avatar
 
 

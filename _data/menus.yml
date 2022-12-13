@@ -10,14 +10,6 @@
   url: /solution/
   external: false 
 
-# - title: results
-#   url: /results/
-#   external: false
-
-# - title: encountered problems
-#   url: /problems/
-#   external: false
-
 - title: authors
   url: /authors/
   external: false

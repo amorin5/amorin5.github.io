@@ -1,6 +1,6 @@
 ---
 title: Authors
-permalink: /about/
+permalink: /authors/
 layout: page
 excerpt: Authors
 comments: false
