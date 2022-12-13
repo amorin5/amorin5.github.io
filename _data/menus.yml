@@ -6,13 +6,23 @@
   url: /background/
   external: false
 
-- title: about
-  url: /about/
+- title: implementation
+  url: /implementation/
+  external: false 
+
+- title: results
+  url: /results/
   external: false
 
-- title: implementation
-  url: /implementation
+- title: encountered problems
+  url: /problems/
   external: false
+
+- title: authors
+  url: /authors/
+  external: false
+
+
 
 # Example:
 # - title: github
