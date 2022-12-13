@@ -11,7 +11,7 @@ Our implementation has three main portions. The first is the trained YOLOv5 [mod
 <br>
 
 ### Model
-We decided to use a YOLO (You Only Look Once) model for object detection. We settled on this approach because the current research points to this being the most efficient for detection. To get started, we found a dataset of potholes in order to train our model. Using that dataset and other sources, we trained our model up to 1000 epochs. The best results were observed at epoch 373 and the model stopped training early at epoch 474 as improvements were not observed. After training the model, we generated performance metrics for the bounding box creation and the actual object detection. 
+We decided to use a YOLO (You Only Look Once) model for object detection. We settled on this approach because the current research points to this being the most efficient for detection. To get started, we found a dataset of potholes in order to train our model. We used a YOLO skeleton we found online and tweaked it for our use. The model was written and hosted on Google Collab for training. Using our dataset and other sources, we trained our model up to 1000 epochs. The best results were observed at epoch 373 and the model stopped training early at epoch 474 as improvements were not observed. After training the model, we generated performance metrics for the bounding box creation and the actual object detection. 
 
 <!-- insert graph of metrics -->
 
@@ -23,11 +23,15 @@ We also measured mAP, the Mean Average Performance of the model. mAP is a formul
 
 The final two metrics were precision and recall.  Precision is the fraction of relevant instances compared to retrieved instances, which measures how many objects are correctly classified. Recall is the fraction of relevant instances that were retrieved, which measures the percentage of true postives vs. false positives. Having a high number for both of these metrics is encouraging, as it suggests that the model is correctly detecting potholes. Our precision metrics is around 80% and our recall is around 70%, which aren't amazing but do show that our model is working correctly a high majority of the time. In our own tests images, there were no cases in which a pothole was not detected or the model drew a bounding box around something that was not a pothole. 
 
-
-# INSERT PERFORMANCE METRICS AND MORE DETAILS ABOUT THE MODEL
 # INSERT TABLES AND IMAGES OF BOUNDING BOXES
 
 ### User Uploads
+Once we had a trained YOLO model, we were able to move into other functionality. One of our main goals with this project was to take the current state-of-the-art and make it real-world usable. In order to do that, we came up with an idea that users can upload their own images, videos, or live captures and the model is run over that submission. To build this functionality, we used Python...
+
+# Samyu explains how she built the upload page
+# link to upload page
+
+The intention of this functionality is to notify government officials of potholes in specific areas so that the time typically taken for screening roads and mapping the ideal route for maintanience and repair is cut down. Because this application can be run on live video, users could attach their dashcams to the model as they are driving -- the survellience proccess is fully automated in this scenario. Otherwise, pedestrians, bikers, and other commuters could take pictures with their phones and submit that data. Essentially, this step is intended to eliminate the need for road surveys. In order to optimize the repair process, we will use metadata from user uploads to create a map of potholes in a given area.
 
 ### Pothole Mapping
 
