@@ -45,7 +45,7 @@ The biggest problem with the model was just chosing which CNN to use, which is c
 ### User Uploads
 Once we had a trained YOLO model, we were able to move into other functionality. One of our main goals with this project was to take the current state-of-the-art and make it real-world usable. In order to do that, we came up with an idea that users can upload their own images, videos, or live captures and the model is run over that submission. To build this functionality, we used Python...
 
-## Our Web Application
+## The Web Application
 
 ### Frameworks and Tools
 
@@ -70,7 +70,10 @@ To create the frontend visuals of our web application, we built out simple `html
 
 
 ### User Uploads: Results
-# link to upload page
+ 
+ Below is a demo of one of our application's functionalities: performing pothole-detection on a user-uploaded image and then presenting the annotated image for user download.
+ 
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/d8X3WLZLb5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### User Uploads: Problems Encountered
 
