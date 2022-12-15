@@ -7,10 +7,10 @@ customjs:
 comments: false
 ---
 <!-- also include results and takeaways here? -->
-Our implementation has three main portions. The first is the trained YOLOv5 [model](#model) that detects potholes out of images and videos. The second part is an additional layer of [functionality](#user-uploads) that allows users to upload their own photos and run the model over those. The third and final part is a [map](#pothole-mapping) of user submissions, plotting the location of potholes in an area using metadata from the user image. 
+Our implementation has three main portions. The first is the trained YOLOv5 [model](#model) that detects potholes out of images and videos. The second part is an additional layer of functionality that allows users to upload their own photos and run the model over those via a [web application](#our-web-application). The third and final part is a [map](#pothole-mapping) of user submissions, plotting the location of potholes in an area using metadata from the user image. 
 <br>
 
-### Model
+## Model
 We decided to use a YOLO (You Only Look Once) model for object detection. We settled on this approach because the current research points to this being the most efficient for detection. To get started, we found a dataset of potholes in order to train our model. We used a YOLO skeleton we found online and tweaked it for our use. The model was written and hosted on Google Collab for training. Using our dataset and other sources, we trained our model up to 1000 epochs. The best results were observed at epoch 373 and the model stopped training early at epoch 474 as improvements were not observed. After training the model, we generated performance metrics for the bounding box creation and the actual object detection. 
 
 <!-- insert graph of metrics -->
@@ -42,44 +42,42 @@ We wanted to include this image to show that when no potholes are detected, the 
 ### Model: Problems Encountered
 The biggest problem with the model was just chosing which CNN to use, which is covered in more detail on the background page. Beyond that, most of the troubleshooting was tinkering with the training, seeing how many epochs created the optimal model, and getting the model to communicate with the Python code for the user upload functionality. These problems were easily overcome with trial and error. 
 
-### User Uploads
-Once we had a trained YOLO model, we were able to move into other functionality. One of our main goals with this project was to take the current state-of-the-art and make it real-world usable. In order to do that, we came up with an idea that users can upload their own images, videos, or live captures and the model is run over that submission. To build this functionality, we used Python...
-
 ## The Web Application
 
-### Frameworks and Tools
+### Web App: Frameworks and Tools
 
 The web application was built using the framework [flask](https://flask.palletsprojects.com/en/2.2.x/), which faciliated the process of creating files to populate for a web app that involves user uploads. We added the yolo repository to the flask setup, which made it such that we could send any user-uploaded image to the model we had already trained, without needing to re-train each time. 
 
 We also used a Python virtual environment to iteratively develop and see our results on a local web page. 
 
-### The Application: Backend
+### Web App: Backend
 
 In our `app.py`, we implemented the following restAPI methods:
 1. `detect`, POST method: saves the user-uploaded photo/video
 2. `opencam`, GET method: opens user's front camera and running our `detect.py` on it to draw labeling boxes around potholes over real-time video footage.
 3. `return-files`, GET method: returns annotated version of user-uploaded image 
 
-### Interaction with YOLO
+### Web App: Interaction with YOLO
 
 After we trained our model, we preserved `best.pt`, the file with weights that yielded the most accurate results. Then, we used our `detect.py` in conjunction with these weights to perform object detection on each new photo/video without needing to re-train the model.
 
-### The Application: Frontend
+### Web App: Frontend
 
 To create the frontend visuals of our web application, we built out simple `html` files and populated them with the buttons and links we wanted. We added attributes that called the appropriate backend methods when the respective buttons were clicked. Additionally, we created a second `html` file for the functionality of our clickable "Download" button appearing after the object-detection had completed. 
 
 
-### User Uploads: Results
- 
+### Web App: Results of User Uploads
+
  Below is a demo of one of our application's functionalities: performing pothole-detection on a user-uploaded image and then presenting the annotated image for user download.
  
  <iframe width="560" height="315" src="https://www.youtube.com/embed/d8X3WLZLb5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### User Uploads: Problems Encountered
+
+### Web App: Problems Encountered
 
 The intention of this functionality is to notify government officials of potholes in specific areas so that the time typically taken for screening roads and mapping the ideal route for maintenance and repair is cut down. Because this application can be run on live video, users could attach their dashcams to the model as they are driving -- the survellience process is fully automated in this scenario. Otherwise, pedestrians, bikers, and other commuters could take pictures with their phones and submit that data. Essentially, this step is intended to eliminate the need for road surveys. In order to optimize the repair process, we will use metadata from user uploads to create a map of potholes in a given area.
 
-### Pothole Mapping
+## Pothole Mapping
 The final step of our implementation is mapping the location of images uploaded by users. In order to do this, we hosted a database of images and wrote a JavaScript script to pull the metadata (latitude, longitude coordinates) from each image. The coordinates would then be uploaded to Google Firebase. Our website then pulls all of the coordinates from the database and places a marker at that location. The resulting map is embedded below, with points corresponding to our own collected images to prove correctness of our workflow. 
 
 ### Pothole Mapping: Problems Encountered
