@@ -45,7 +45,29 @@ The biggest problem with the model was just chosing which CNN to use, which is c
 ### User Uploads
 Once we had a trained YOLO model, we were able to move into other functionality. One of our main goals with this project was to take the current state-of-the-art and make it real-world usable. In order to do that, we came up with an idea that users can upload their own images, videos, or live captures and the model is run over that submission. To build this functionality, we used Python...
 
-# Samyu explains how she built the upload page
+## Our Web Application
+
+### Frameworks and Tools
+
+The web application was built using the framework [flask](https://flask.palletsprojects.com/en/2.2.x/), which faciliated the process of creating files to populate for a web app that involves user uploads. We added the yolo repository to the flask setup, which made it such that we could send any user-uploaded image to the model we had already trained, without needing to re-train each time. 
+
+We also used a Python virtual environment to iteratively develop and see our results on a local web page. 
+
+### The Application: Backend
+
+In our `app.py`, we implemented the following restAPI methods:
+1. `detect`, POST method: saves the user-uploaded photo/video
+2. `opencam`, GET method: opens user's front camera and running our `detect.py` on it to draw labeling boxes around potholes over real-time video footage.
+3. `return-files`, GET method: returns annotated version of user-uploaded image 
+
+### Interaction with YOLO
+
+After we trained our model, we preserved `best.pt`, the file with weights that yielded the most accurate results. Then, we used our `detect.py` in conjunction with these weights to perform object detection on each new photo/video without needing to re-train the model.
+
+### The Application: Frontend
+
+To create the frontend visuals of our web application, we built out simple `html` files and populated them with the buttons and links we wanted. We added attributes that called the appropriate backend methods when the respective buttons were clicked. Additionally, we created a second `html` file for the functionality of our clickable "Download" button appearing after the object-detection had completed. 
+
 
 ### User Uploads: Results
 # link to upload page
