@@ -24,11 +24,18 @@ We also measured mAP, the Mean Average Performance of the model. mAP is a formul
 The final two metrics were precision and recall.  Precision is the fraction of relevant instances compared to retrieved instances, which measures how many objects are correctly classified. Recall is the fraction of relevant instances that were retrieved, which measures the percentage of true postives vs. false positives. Having a high number for both of these metrics is encouraging, as it suggests that the model is correctly detecting potholes. Our precision metrics is around 80% and our recall is around 70%, which aren't amazing but do show that our model is working correctly a high majority of the time. In our own tests images, there were no cases in which a pothole was not detected or the model drew a bounding box around something that was not a pothole. 
 
 ### Model: Results
-Our model outputs these images, with bounding boxes drawn around the detected potholes and a numerical indication of how confident the model is in its detection. Some output images can be seen below.
+Our model outputs these images, with bounding boxes drawn around the detected potholes and a numerical indication of how confident the model is in its detection. Some output images can be seen below:
 
 ![Annotated pothole image](/assets/img/annotated-pothole-1.jpeg)
 
-# ANNOTATED POTHOLE IMAGES
+![Annotated pothole image](/assets/img/annotated-pothole-2.jpeg)
+
+![Annotated pothole image](/assets/img/annotated-pothole-3.jpeg)
+
+![Annotated pothole image](/assets/img/annotated-pothole-4.jpeg)
+
+![Annotated pothole image](/assets/img/annotated-pothole-5.jpeg)
+We wanted to include this image to show that when no potholes are detected, the model also recognizes that and does not draw any bounding boxes or identification markers.
 
 ### Model: Problems Encountered
 The biggest problem with the model was just chosing which CNN to use, which is covered in more detail on the background page. Beyond that, most of the troubleshooting was tinkering with the training, seeing how many epochs created the optimal model, and getting the model to communicate with the Python code for the user upload functionality. These problems were easily overcome with trial and error. 
