@@ -26,7 +26,7 @@ The final two metrics were precision and recall.  Precision is the fraction of r
 ### Model: Results
 Our model outputs these images, with bounding boxes drawn around the detected potholes and a numerical indication of how confident the model is in its detection. Some output images can be seen below:
 
-![Annotated pothole image](/assets/img/annotated-pothole-1.jpeg)
+![Annotated pothole image](/assets/img/annotated-pothole-1.jpeg) <img align = "center">
 
 ![Annotated pothole image](/assets/img/annotated-pothole-2.jpeg)
 
@@ -34,7 +34,8 @@ Our model outputs these images, with bounding boxes drawn around the detected po
 
 ![Annotated pothole image](/assets/img/annotated-pothole-4.jpeg)
 
-![Annotated pothole image](/assets/img/annotated-pothole-5.jpeg)
+![Annotated pothole image](/assets/img/annotated-pothole-5.jpeg) <img align = "center">
+
 <br>
 We wanted to include this image to show that when no potholes are detected, the model also recognizes that and does not draw any bounding boxes or identification markers.
 
