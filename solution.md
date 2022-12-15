@@ -35,6 +35,7 @@ Our model outputs these images, with bounding boxes drawn around the detected po
 ![Annotated pothole image](/assets/img/annotated-pothole-4.jpeg)
 
 ![Annotated pothole image](/assets/img/annotated-pothole-5.jpeg)
+<br>
 We wanted to include this image to show that when no potholes are detected, the model also recognizes that and does not draw any bounding boxes or identification markers.
 
 ### Model: Problems Encountered
