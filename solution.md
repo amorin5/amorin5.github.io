@@ -100,3 +100,4 @@ One of the issues we encountered was trying to set up a Google Developer account
 ### Conclusion
 Going into this implementation, we set goals to automate the detection of potholes, simplify data collection, and improve the repair process to broadly reduce the presence of potholes. Our YOLO model is able to detect potholes with high accuracy. Users' ability to run the model over dashcam footage, photos, and videos creates a better and simplier way to collect broad data. Mapping those user uploads and plotting an accurate map of local potholes frees time and resources of repair workers. Through these three steps, we have addressed and achieved each of our goals. Hopefully, we can continue to work with this technology to contribute to safer infrastructure across the US and world at large.
 
+### Interactive Pothole Map
