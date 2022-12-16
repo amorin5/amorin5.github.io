@@ -75,6 +75,12 @@ To create the frontend visuals of our web application, we built out simple `html
 
 ### Web App: Problems Encountered
 
+One of the biggest sources of difficulties was just managing different imports, packages, and dependencies. The YOLO repository has hundreds of imports of commonly-used packages, which were in many occassions inconsistent or conflicting with the versions used by `flask`. To fix these, we often had to manually uninstall packages and reinstall different versions of them using `pip`. Additonally, there were inconsistencies around versions of `python` that newer versions of packages were compatible, and sometimes we had dependency issues due to our `venv`.
+
+And since none of us had strong prior experience with web development, we were debugging each of these issues on the fly, sometimes finding that resolving one just opened up the door to an influx of new issues.
+
+### Conclusion
+
 The intention of this functionality is to notify government officials of potholes in specific areas so that the time typically taken for screening roads and mapping the ideal route for maintenance and repair is cut down. Because this application can be run on live video, users could attach their dashcams to the model as they are driving -- the survellience process is fully automated in this scenario. Otherwise, pedestrians, bikers, and other commuters could take pictures with their phones and submit that data. Essentially, this step is intended to eliminate the need for road surveys. In order to optimize the repair process, we will use metadata from user uploads to create a map of potholes in a given area.
 
 ## Pothole Mapping
