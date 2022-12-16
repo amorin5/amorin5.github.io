@@ -12,7 +12,7 @@ Our implementation has three main portions. The first is the trained YOLOv5 [mod
 <br>
 
 Don't feel like reading all this? Check out our 5min presentation:
-! [Presentation Video](assets/img/pres_video.mp4)
+![Presentation Video](assets/img/pres_video.mp4)
 
 ## Model
 We decided to use a YOLO (You Only Look Once) model for object detection. We settled on this approach because the current research points to this being the most efficient for detection. To get started, we found a dataset of potholes in order to train our model. We used a YOLO skeleton we found online and tweaked it for our use. The model was written and hosted on Google Collab for training. Using our dataset and other sources, we trained our model up to 1000 epochs. The best results were observed at epoch 373 and the model stopped training early at epoch 474 as improvements were not observed. After training the model, we generated performance metrics for the bounding box creation and the actual object detection. 
