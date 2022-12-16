@@ -7,7 +7,7 @@ customjs:
 comments: false
 ---
 <!-- also include results and takeaways here? -->
-Our implementation has three main portions. The first is the trained YOLOv5 [model](#model) that detects potholes out of images and videos. The second part is an additional layer of functionality that allows users to upload their own photos and run the model over those via a [web application](#our-web-application). The third and final part is a [map](#pothole-mapping) of user submissions, plotting the location of potholes in an area using metadata from the user image. 
+Our implementation has three main portions. The first is the trained YOLOv5 [model](#model) that detects potholes out of images and videos. The second part is an additional layer of functionality that allows users to upload their own photos and run the model over those via a [web application](#the-web-application). The third and final part is a [map](#pothole-mapping) of user submissions, plotting the location of potholes in an area using metadata from the user image. 
 [Link to our code base](https://github.com/amorin5/amorin5.github.io)
 <br>
 
