@@ -91,7 +91,7 @@ Our pothole map with markers can be found at the bottom of the page. This intera
 
 ### Pothole Mapping: Frameworks and Tools
 
-The pothole map was built using [Google Maps Platform](https://developers.google.com/maps) which allows this website to host an interactive Google Map and [Google Firebase](https://cloud.google.com/firestore/docs/client/get-firebase) which is our database that holds coordinate data for our pothole markers. The map code is written in javascript. 
+The pothole map was built using [Google Maps Platform](https://developers.google.com/maps) which allows this website to host an interactive Google Map and [Google Firebase](https://cloud.google.com/firestore/docs) which is our database that holds coordinate data for our pothole markers. The map code is written in javascript. 
 
 ### Pothole Mapping: Problems Encountered
 
