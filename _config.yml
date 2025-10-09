@@ -1,23 +1,22 @@
 # Site settings
-title: Plothole -- Using Computer Vision to Improve Urban Infrastructure # site title
+title: Angie Morin # site title
 description: >- # site description
-  Click to the potholes tab to read more about how we use machine learning to reduce potholes on roads.
+  Angie Morin's portfolio
 lang: en-US # default lang
-timezone: America/Chicago # set your timezone
+timezone: America/Los Angeles # set your timezone
 image: assets/img/pothole.png # This image used for Open Graph more info https://ogp.me/
-repo: https://github.com/amorin5/pothole-vision.git # site repo [optional]
 mode: light # default theme "dark" | "light"
 
 # Profile settings
 author:
-  name: Using Computer Vision to Improve Infrastructure # author name
+  name: hi, i'm angie, nice to meet you... # author name
   bio: >- # tell to the world
-      Pothole repairs are the most common form of road repairs. Unrepaired potholes can cause collisions, injury, and even death. Because of this, we wanted to improve the process through automated detection, location, and mapping. Click through the tabs to see why we wanted to tackle this issue, how we went about it, what our results are, and what problems we overcame.
-  avatar: /assets/img/potholeimg.png # avatar
+      welcome to my site! here are a few things i've built in my free time, either for fun or to learn a new system, or because products i like don't have the features i want. click around, make yourself at home :)
+  avatar: /assets/img/pfp.JPG # avatar
 
 
 # URL settings
-url: "https://amorin5.github.io/pothole-vision" #
+url: "https://amorin5.github.io/angie" #
 baseurl:
 permalink: /:title/
 google_analytics: # leave it blank if not wish

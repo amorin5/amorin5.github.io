@@ -2,19 +2,13 @@
   url: /
   external: false
 
-- title: background
+- title: projects
   url: /background/
   external: false
 
-- title: solution
+- title: resume
   url: /solution/
   external: false 
-
-- title: authors
-  url: /authors/
-  external: false
-
-
 
 # Example:
 # - title: github
