@@ -4,15 +4,15 @@ description: >- # site description
   Angie Morin's portfolio
 lang: en-US # default lang
 timezone: America/Los Angeles # set your timezone
-image: assets/img/pfp.JPG # This image used for Open Graph more info https://ogp.me/
+image: assets/img/pothole.png # This image used for Open Graph more info https://ogp.me/
 mode: light # default theme "dark" | "light"
 
 # Profile settings
 author:
-  name: hi! i'm angie, nice to meet you... # author name
+  name: hi, i'm angie, nice to meet you... # author name
   bio: >- # tell to the world
       welcome to my site! here are a few things i've built in my free time, either for fun or to learn a new system, or because products i like don't have the features i want. click around, make yourself at home :)
-  avatar: /assets/img/pfp.JPG
+  avatar: /assets/img/pfp.JPG # avatar
 
 
 # URL settings
