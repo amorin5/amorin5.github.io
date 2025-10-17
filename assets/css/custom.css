@@ -1,0 +1,21 @@
+.avatar-frame {
+    width: 350px;          /* change this to the size you want */
+    aspect-ratio: 1 / 1;   /* guarantees a square, even before image loads */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+  }
+  
+  /* fill the frame without distortion and beat any theme rules */
+  .avatar-frame > .author-avatar {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+    max-width: none !important;
+    transform: none !important;  /* in case the theme scales images */
+  }
+  
+  /* optional: if the theme has a generic img { width:100%; } inside .author */
+  .author img { width: auto !important; height: auto !important; }

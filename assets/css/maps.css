@@ -6,6 +6,9 @@
     height: 300px;
     width: 100%;
   }
+  img.responsive{
+    aspect-ratio: auto;
+  }
   
   /* 
    * Optional: Makes the sample page fill the window. 

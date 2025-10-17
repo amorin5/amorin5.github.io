@@ -3,11 +3,11 @@
   external: false
 
 - title: projects
-  url: /background/
+  url: /projects/
   external: false
 
 - title: resume
-  url: /solution/
+  url: /resume/
   external: false 
 
 # Example:
