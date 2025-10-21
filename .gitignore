@@ -5,3 +5,6 @@ _site/
 _drafts
 klise-*.gem
 Gemfile.lock
+.bundle
+vendor/bundle/ruby/3.40
+
